@@ -4,111 +4,70 @@
   @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&family=Roboto+Mono:ital,wght@1,300&family=Space+Grotesk:wght@300;700&display=swap');
 
   *{
+    margin: 0;
+    padding: 0;
     font-family: 'Kanit', sans-serif;
     
   }
+ /* .container{
+    width: 90%;
+    background-color: rgba(201, 200, 200, 0.341);
+    margin: 0 auto;
+    height: 100%;
+ } */
 
-  .header{
-   
-    padding: 50px 240px;
-    background: rgba(255, 144, 14, 0.10);
-    margin-bottom: 30px;
-  }
-.navbar{
+ /* nav bar */
+ .navbar{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.navbar h1{
-    font-size: 2rem;
-}
-.navbar ul{
+    justify-content: space-between;
+    margin-bottom: 20px;
+ }
+ .navbar ul{
     display: flex;
-}
-.navbar ul li{
+ }
+ .navbar ul li {
     list-style: none;
     margin-right: 30px;
-}
-.navbar ul li a{
+ }
+ .navbar ul li a{
     text-decoration: none;
-}
+    color: red;
+ }
+  /* end nav bar */
+  /* banner section */
 
+  header{
+padding: 50px 240px;
+  }
+  
 .banner-content{
-    max-width: 800px;
     text-align: center;
-    margin: 0 auto;
- 
+  max-width: 800px;
+   margin: 0 auto;
 }
-.banner-content h1{
-    font-size: 3rem;
-    line-height: 45px;
-}
-
 .banner-content p{
-    font-size: 0.8rem;
+    margin: 10px 0;
+    color: gray;
     font-weight: 200;
-   
-
-}
-.banner-section img{
-    width: 800px;
-    margin-top:30px ;
-    border-radius: 10px;
-   
 }
 .btn-primary{
-    padding: 10px 20px;
-   background: rgb(241, 99, 11);
-   border: none;
-   color: white;
-   border-radius: 5px;
-   font-size: 1.25rem;
-   cursor: pointer;
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
+  .banner-section img{
+    width:100%;
+   
+  }
 
-/* feature section */
-main{
-    max-width: 1440px;
-    margin: 0 auto;
-}
-.feature-section{
+
+  /* responsive */
+
+  @media screen and (max-width:576px) {
+
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:0 100px;
-    /* border: 2px solid red; */
-}
-.team-pic{
-    
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 10px;
-   margin-right: 40px;
-}
-
-/* responsive */
-
-@media screen and (max-width:576px) {
-    .header{
-        padding: 20px;
-    }
-    .navbar{
-        flex-direction: column;
-        
-    }
-    .banner-section img{
-        width: 100%;
-    }
-    .feature-section{
-        flex-direction: column;
-       padding: 0;
-    }
-    .feature-description{
-       padding: 50px;
-    }
-    .team-pic{
-        margin: 0 auto;
-        grid-template-columns: 1fr;
-    }
-}
+  }
