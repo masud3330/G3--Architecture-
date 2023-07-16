@@ -1,3 +1,114 @@
-h1{
-    color: red;
+
+/* google font added */
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&family=Roboto+Mono:ital,wght@1,300&family=Space+Grotesk:wght@300;700&display=swap');
+
+  *{
+    font-family: 'Kanit', sans-serif;
+    
+  }
+
+  .header{
+   
+    padding: 50px 240px;
+    background: rgba(255, 144, 14, 0.10);
+    margin-bottom: 30px;
+  }
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar h1{
+    font-size: 2rem;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+ 
+}
+.banner-content h1{
+    font-size: 3rem;
+    line-height: 45px;
+}
+
+.banner-content p{
+    font-size: 0.8rem;
+    font-weight: 200;
+   
+
+}
+.banner-section img{
+    width: 800px;
+    margin-top:30px ;
+    border-radius: 10px;
+   
+}
+.btn-primary{
+    padding: 10px 20px;
+   background: rgb(241, 99, 11);
+   border: none;
+   color: white;
+   border-radius: 5px;
+   font-size: 1.25rem;
+   cursor: pointer;
+}
+
+/* feature section */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.feature-section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 100px;
+    /* border: 2px solid red; */
+}
+.team-pic{
+    
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   margin-right: 40px;
+}
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    .header{
+        padding: 20px;
+    }
+    .navbar{
+        flex-direction: column;
+        
+    }
+    .banner-section img{
+        width: 100%;
+    }
+    .feature-section{
+        flex-direction: column;
+       padding: 0;
+    }
+    .feature-description{
+       padding: 50px;
+    }
+    .team-pic{
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
 }
