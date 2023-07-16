@@ -164,6 +164,9 @@ padding: 50px 240px;
     height: 10px;
     margin-bottom: 50px;
     color: rgb(186, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
   /* responsive */
